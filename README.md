@@ -35,7 +35,7 @@ Then, you should prepare your own `user-config.json`, then rename it to `configu
 
 Finally, run this command to launch SSR, you should change some options into your own configurations:
 ```shell
-$ docker run -p 2333 \ # Change it to your own port
+$ docker run -p 2333:2333 \ # Change it to your own port
 -v /path/to/your/configuration/file/:/etc/shadowsocks \ # Change the path to the FOLDER which contains configuration.json, not the file.
 thnuiwelr/ssr-docker
 ```
