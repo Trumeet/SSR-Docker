@@ -16,4 +16,4 @@ RUN apk update && \
     apk add python
 WORKDIR /app/shadowsocks
 
-CMD [ "python", "server.py", "-v", "-c", "/etc/shadowsocks/configuration.json" ]
+ENTRYPOINT [ "python", "server.py" ]
